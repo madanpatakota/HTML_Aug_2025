@@ -2,11 +2,178 @@
 <html>
     <head>
         <title>Semmantic elements</title>
+
+        <style>
+          .webHeader{
+               background-color: black;
+               color:white;
+               padding:20px;
+               text-align: center;
+          }
+
+          nav ul{
+            list-style: none;
+          }
+
+          ul li{
+              display:inline;
+              margin:10px;
+          }
+
+          ul li a{
+             /* color:white; */
+          }
+
+          .container{
+              display:grid;
+              grid-template-columns: 1fr 2fr 1fr;
+              gap:5px;
+          }
+
+          .sidebar-left{
+            background-color:lightgray;
+            padding:10px;
+          }
+
+          .sidebar-Right{
+            background-color:lightgray;
+            padding:10px;
+          }
+
+          .mainContent{
+            background-color: darkgray;
+            padding:80px;
+          }
+
+          .webFooter{
+               background-color: black;
+               color:white;
+               padding:20px;
+               text-align: center;
+          }
+
+        </style>
+
     </head>
     <body>
+     
+       <!--Header-->
+      <div class="webHeader">
+         <header>
+             <h1>Welcome to our website </h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+     
+
+      <!--Main Content-->
+      <div class="container">
+
+        <!-- leftside -->
+        <div class="sidebar-left">
+          <aside>
+               <h2>Related Links</h2>
+               <ul>
+                  <li>
+                    <a href="https://www.google.com/">Google</a>
+                  </li>
+                  <li>
+                    <a href="">Join our newsLetter</a>
+                  </li>
+                 
+               </ul>
+          </aside>
+
+        </div>
+        
+        <!-- Middle -->
+        <div class="mainContent">
+              <main>
+
+                  <section>
+                      <h2>Our Team</h1>
+                      <p>
+                         We are a creative and passionate team dedicated to building
+                          innovative solutions.
+                      </p>
+                  </section>
+
+                  <article>
+                      <h2>Cricket Blog Post</h2>
+                      <p>Virat kohil and Rohit Sharma are the best players</p>
+                  </article>
+
+
+                  <time>John Born Date : July 01 , 1970</time>
+
+                  <mark>Importent Information is that He arrives to the Bengolore</mark>
+
+
+                   <section>
+                      <h2>Our Services</h1>
+                     <ul>
+                      <li>
+                         <h3>Web development</h3>
+                         <h3>Job Gurantee</h3>
+                         <h3>Real time Project Explanation after course</h3>
+                         <h3>Taking Demos</h3>
+                      </li>
+                     </ul>
+                  </section>
+
+                  <details>
+                      <summary>More Information</summary>
+                      <p>We offer a wide range of services to help you succeed.</p>
+                  </details>
+                 
 
 
 
+
+              </main>
+        </div>
+
+        <!-- rightside -->
+        <div class="sidebar-Right">
+            <aside>
+               <h2>Related Images</h2>
+               <ul>
+                  <li>
+                    <figure>
+                      <img width="50%" src="https://www.quantumworkplace.com/hubfs/Marketing/Website/Blog/Blog%20Images/the%20importance%20of%20employee%20recognition.png">
+                      <figcaption>Employee Working...</figcaption>
+                    </figure>
+                  </li>
+               </ul>
+          </aside>
+
+        </div>
+
+      </div>
+
+      <!--Footer-->
+       <div class="webFooter">
+          <footer>
+              <p>© 2025 Misard Software Solutions India Pvt Ltd. All Rights Reserved.</p>
+          
+              <address>
+                  <p> 
+                      S-211, 1st Floor, Ardent Office One
+                      Hoodi Circle, ITPL Road, Bangalore
+                      Karnataka - 560048
+                  </p> 
+              </address>
+          
+          
+            </footer>
+      </div>
 
 
     </body>
