@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            color:white;
+            font-size:14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: grid;
+            place-items: center;
+        }
+
+        form{
+             padding:30px;
+             background-color: darkslategrey;
+             width:40%;
+        }
+
+        input , textarea , select , button{
+            border-radius: 20px;
+        }
+
+
+          input[type="text"] ,
+          input[type="email"] ,
+          input[type="password"] ,
+          input[type="date"] ,
+          textarea , select{
+            border:2px solid white;
+            width:100%;
+            padding:10px;
+            font-size:16px;
+            margin-top:5px;
+            box-sizing:border-box;
+            /* cursor:pointer; */
+        }
+
+
+        label{
+            font-size:15px;
+        }
+
+
+        .input-group{
+            margin-top:15px;
+        }
+
+        button{
+            background-color: green;
+            height: 40px;
+            width:100px;
+            color:white;
+            cursor:pointer;
+            border:1px solid white;
+        }
+
+        h1{
+            margin:0;
+        }
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <form>
+        <h1>Student Registration Form</h1>
+        <hr>
+
+
+        <div class="input-group">
+            <label for="studentid">Name:</label>
+            <input id="studentid" 
+            name="studentName"
+            type="text" 
+            placeholder="Please Enter Student Name">
+         </div>
+
+
+        <div class="input-group">
+            <label for="studentEmailid">Email:</label>
+            <input id="studentEmailid" 
+            name="studentEmailName"
+            type="email" 
+            placeholder="Please Enter Student Email">
+         </div>
+
+
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input id="password" 
+            name="password"
+            type="password" 
+            placeholder="Please Enter Student Password">
+         </div>
+
+
+          <div class="input-group">
+            <label for="password">Date:</label>
+            <input id="DOB" 
+            name="DOB"
+            type="date" 
+            placeholder="Please Enter Student DOB">
+         </div>
+
+
+        <div class="input-group">
+            <label for="">Gender:</label>
+             <input type="radio" id="male"    name="studentgender" value="male">Male
+             <input type="radio" id="female" name="studentgender" value="female">FeMale
+         </div>
+
+
+
+          <div class="input-group">
+            <label for="">Hobbies:</label>
+             <input type="checkbox" id="hobby1" name="studenthobby" value="Sports">Sports
+             <input type="checkbox" id="hobby2" name="studenthobby" value="music">Music
+             <input type="checkbox" id="hobby3" name="studenthobby" value="Travel">travel
+         </div>
+
+
+        <div class="input-group">
+            <label for="">Country:</label>
+            <select id="country" name="studentCountry">
+                <option value="ind">India</option>
+                <option value="us">United of States</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+         </div>
+
+
+          <div class="input-group">
+            <label for="">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Please drop the message"></textarea>
+         </div>
+
+
+          <div class="input-group">
+            <button>Submit</button>
+            <span>Already have an account?</span>Please login with <strong>Google</strong>
+         </div>
+
+
+
+
+
+
+
+    </form>
+  </body>
+</html>
